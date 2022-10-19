@@ -2,13 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body class="min-100-vh flex-column">
-    <input type="text" class="nameInput"></input>
-    <button class="search">Search</button>
+    <header>
+      <h1 class="bg-info">Weather Dashboard</h1>
+    </header>
+    <div style="display: flexbox;">
+      <aside style="display: flex; width: 25%;">
+        <h2 class="alert-primary">Search for a City:</h2>
+        <input type="text" id="nameInput"></input>
+        <button id="search">Search</button>
+        <hr>
+      </aside>
+      <article style="display: flex; width: 75%;">
+        <section>
+          <h3 class="city"></h3>
+          <p class="temp"></p>
+          <p class="wind"></p>
+          <p class="humidity"></p>
+        </section>
+        <section style="display: flexbox;">
+          <div class="card dayone" style="width: 18%; display: flex;">
+            <h5 class="card-title"></h5>
+            <p class="card-text icon"></p>
+            <p class="card-text temp"></p>
+            <p class="card-text wind"></p>
+            <p class="card-text humidity"></p>
+          </div>
+          <div class="card daytwo" style="width: 18%; display: flex;">
+            <h5 class="card-title"></h5>
+            <p class="card-text icon"></p>
+            <p class="card-text temp"></p>
+            <p class="card-text wind"></p>
+            <p class="card-text humidity"></p>
+          </div>
+          <div class="card daythree" style="width: 18%; display: flex;">
+            <h5 class="card-title"></h5>
+            <p class="card-text icon"></p>
+            <p class="card-text temp"></p>
+            <p class="card-text wind"></p>
+            <p class="card-text humidity"></p>
+          </div>
+          <div class="card dayfour" style="width: 18%; display: flex;">
+            <h5 class="card-title"></h5>
+            <p class="card-text icon"></p>
+            <p class="card-text temp"></p>
+            <p class="card-text wind"></p>
+            <p class="card-text humidity"></p>
+          </div>
+          <div class="card dayfive" style="width: 18%; display: flex;">
+            <h5 class="card-title"></h5>
+            <p class="card-text icon"></p>
+            <p class="card-text temp"></p>
+            <p class="card-text wind"></p>
+            <p class="card-text humidity"></p>
+          </div>
+        </section>
+      </article>
+    </div>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
